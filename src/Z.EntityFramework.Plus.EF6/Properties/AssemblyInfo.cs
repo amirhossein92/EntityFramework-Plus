@@ -8,15 +8,15 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Z.EntityFramework.Plus.EF6")]
+[assembly: AssemblyTitle("Revised EntityFramework Plus EF6")]
 [assembly: AssemblyDescription("Description: EF Bulk Operations & Utilities | Bulk Insert, Update, Delete, Merge from database.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ZZZ Projects Inc.")]
-[assembly: AssemblyProduct("Z.EntityFramework.Plus.EF6")]
+[assembly: AssemblyProduct("Revised.Z.EntityFramework.Plus.EF6")]
 [assembly: AssemblyCopyright("Copyright © ZZZ Projects Inc. 2014 - 2016")]
 [assembly: AssemblyTrademark("SQL & .NET Tools")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
-[assembly: Guid("89f47e22-ff83-4ac8-be90-c6755748cf89")]
+[assembly: Guid("febf7a4c-7f0f-4e37-963a-98fb5de50c23")]
 [assembly: AssemblyVersion("1.12.14")]
 [assembly: AssemblyFileVersion("1.12.14")]

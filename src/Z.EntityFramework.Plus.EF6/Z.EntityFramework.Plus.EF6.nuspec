@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Revised.EF6.PLUS</id>
+    <version>1.1.1</version>
+    <title>$title$</title>
+    <authors>AmirHossein</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <description>This is the fork of EF PLUS EF6. the only difference is the type of audit primary key (changed from int to long). </description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>EFPlus Revised_Audit</tags>
+  </metadata>
+</package>

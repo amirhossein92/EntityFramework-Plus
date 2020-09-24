@@ -60,9 +60,9 @@ namespace Z.EntityFramework.Plus
         private static Func<ObjectStateEntry, object> RelationshipEntryKey1;
 
         public static object GetRelationshipEntryKey0(ObjectStateEntry entry)
-        { 
+        {
 
-#if EF5 
+#if EF5
             var relationshipEntryType = typeof(ObjectStateEntry).Assembly.GetType("System.Data.Objects.RelationshipEntry");
 #else
             var relationshipEntryType = typeof(ObjectStateEntry).Assembly.GetType("System.Data.Entity.Core.Objects.RelationshipEntry");
@@ -110,13 +110,21 @@ namespace Z.EntityFramework.Plus
 #endif
 
 
-            /// <summary>Gets or sets the entries.</summary>
-            /// <value>The entries.</value>
+        /// <summary>Gets or sets the entries.</summary>
+        /// <value>The entries.</value>
         public List<AuditEntry> Entries { get; set; }
 
         /// <summary>Gets or sets the  created by username.</summary>
         /// <value>The created by username.</value>
         public string CreatedBy { get; set; }
+
+        /// <summary>Gets or sets the main entity Id .</summary>
+        /// <value>The main entity Id.</value>
+        public Guid MainEntityId { get; set; }
+
+        /// <summary>Gets or sets the additional parameter.</summary>
+        /// <value>The additional parameter.</value>
+        public string Tag { get; set; }
 
         /// <summary>Gets the configuration.</summary>
         /// <value>The configuration.</value>

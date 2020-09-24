@@ -91,7 +91,7 @@ namespace Z.EntityFramework.Plus
         /// <summary>Gets or sets the identifier of the audit entry.</summary>
         /// <value>The identifier of the audit entry.</value>
         [Column(Order = 0)]
-        public int AuditEntryID { get; set; }
+        public long AuditEntryID { get; set; }
 
         /// <summary>Gets or sets who created this object.</summary>
         /// <value>Describes who created this object.</value>
@@ -127,7 +127,7 @@ namespace Z.EntityFramework.Plus
         /// <value>The object state entry.</value>
         [NotMapped]
 #if EF5 || EF6
-            public ObjectStateEntry Entry { get; set; }
+        public ObjectStateEntry Entry { get; set; }
 #elif EFCORE
     // EFCORE still have some issue with "NotMapped" attribute
         public EntityEntry Entry;
@@ -171,7 +171,7 @@ namespace Z.EntityFramework.Plus
         public string StateName
         {
             get { return State.ToString(); }
-            set { State = (AuditEntryState) Enum.Parse(typeof (AuditEntryState), value); }
+            set { State = (AuditEntryState)Enum.Parse(typeof(AuditEntryState), value); }
         }
     }
 }
