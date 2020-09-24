@@ -120,7 +120,11 @@ namespace Z.EntityFramework.Plus
 
         /// <summary>Gets or sets the main entity Id .</summary>
         /// <value>The main entity Id.</value>
-        public Guid MainEntityId { get; set; }
+        public Guid? MainEntityId { get; set; }
+
+        /// <summary>Gets or sets the display property name.</summary>
+        /// <value>The Property Name to Display for Entity .</value>
+        public string DisplayPropertyName { get; set; }
 
         /// <summary>Gets or sets the additional parameter.</summary>
         /// <value>The additional parameter.</value>
